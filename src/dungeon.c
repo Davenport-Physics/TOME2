@@ -3739,6 +3739,16 @@ static void process_command(void)
 			toggle_inven_equip();
 			break;
 		}
+		/*Added Cheat -> Emma Davenport*/
+	case ')':
+		{
+		
+			p_ptr->au += 1000;
+			p_ptr->redraw |= (PR_GOLD);
+			msg_print("Added 1000 gold!");
+			break;
+			
+		}
 
 
 		/*** Standard "Movement" Commands ***/
